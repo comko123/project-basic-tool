@@ -1,0 +1,37 @@
+.sbody{
+    height:80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    .stitle{
+        font-size:60px;
+        color:salmon;
+        margin-bottom:30px;
+        font-family:cursive;
+    }
+    .sid,.spw,.scpw,.sem{
+        width: 450px;
+        height: 35px;
+        border-radius:15px;
+        margin:10px;
+        border: 3px solid lightgray;
+    }
+    .sid:focus,.spw:focus,.scpw:focus,.sem:focus{
+        outline:none;
+        border:3px solid gray;
+    }
+    .sbtn{
+        border-radius: 15px;
+        width:100px;
+        height:50px;
+        margin:10px;
+        background-color: white;
+        color:gray;
+        border: 3px solid cornflowerblue;
+    }
+    .sbtn:active{
+        background-color:cornflowerblue;
+        color:white;
+    }
+}

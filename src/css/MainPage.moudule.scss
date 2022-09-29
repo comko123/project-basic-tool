@@ -1,0 +1,29 @@
+.contanier{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height: 80vh;
+.ctype{
+    font-size: 60px;
+    color:salmon;
+    font-family:cursive;
+}
+.block{
+    display:flex;
+    justify-content : space-between;
+    width: 40vw;
+    a{
+        text-decoration: none;
+        color:rgb(45, 117, 199);
+        font-size:30px;
+        padding:10px;
+        font-family:cursive;
+        border-radius:20px;
+        border: 4px solid rgb(153, 45, 199);
+    }
+    a:visit{
+        color:rgb(45, 117, 199);
+    }
+}
+}

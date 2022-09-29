@@ -1,0 +1,41 @@
+@mixin circle {
+        width:380px;
+        height:35px;
+        border-radius: 15px;
+        border : 3px solid lightgrey;
+}
+$position :center; $wColor:white; $bColor:cornflowerblue;
+.lbody{
+    height: 80vh;
+    display: flex;
+    align-items: $position;
+    justify-content: $position;
+    .title{
+        text-align: $position;
+        font-size: 60px;
+        color:salmon;
+        font-family:cursive;
+    }
+    .frm{
+        position: relative;
+   .id,.pw{
+        @include circle;
+    }
+    .pw:focus,.id:focus{
+        border:3px solid gray;
+        outline: none;
+    }
+    .btn{
+        top:0px;
+        height:105px; 
+        width:80px;
+        position:absolute;
+        color:grey;
+        border-radius:15px;
+        background-color:$wColor;
+        border : 3px solid $bColor;
+    }
+    .btn:active{
+        color:$wColor;
+        background-color:$bColor;
+    }}}
