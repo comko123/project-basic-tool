@@ -18,14 +18,14 @@ $position :center; $wColor:white; $bColor:cornflowerblue;
     }
     .frm{
         position: relative;
-   .id,.pw{
+   input[type=text],input[type=password]{
         @include circle;
     }
-    .pw:focus,.id:focus{
+    input[type=password]:focus,input[type=text]:focus{
         border:3px solid gray;
         outline: none;
     }
-    .btn{
+    input[type=submit]{
         top:0px;
         height:105px; 
         width:80px;
@@ -35,7 +35,7 @@ $position :center; $wColor:white; $bColor:cornflowerblue;
         background-color:$wColor;
         border : 3px solid $bColor;
     }
-    .btn:active{
+    input[type=submit]:active{
         color:$wColor;
         background-color:$bColor;
     }}}

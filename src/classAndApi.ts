@@ -11,6 +11,7 @@ constructor(id?:string,pw?:string){
     this.id = id
     this.password = pw}}
   
-export const loginServer = async(data:info) => {
-    await axios.post(``,{userData:data})
+export const server = async(link:string,data:info) => {
+    await axios.post(link,data)
+    console.log(await axios.post(link,data))
 }
