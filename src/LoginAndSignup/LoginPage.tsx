@@ -15,7 +15,7 @@ const pwValue= useRef<HTMLInputElement>(null)
     <input type="submit" value = "로그인" onClick = {()=>{
     const userInfo = new logininformation(idValue.current?.value , pwValue.current?.value)
     console.log(userInfo)
-    server(`https://349c686e380029.lhr.life/log-in`,userInfo)
+    server(`/log-in`,userInfo)
     }}/>
     </form></div></div></>)}
 export default LoginPage

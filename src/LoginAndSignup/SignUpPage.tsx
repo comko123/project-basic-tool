@@ -5,7 +5,7 @@ const SignUpPage = () => {
  const {register,handleSubmit,setError} = useForm<sinfo>({mode:"onBlur"})
  const valied = (value:sinfo) => {
     console.log(value)
-    server(`https://4371405294a47c.lhr.life/sign-up`,value)
+    server(`/sign-up`,value)
     if(value.password!==value.confirmPassword){
     return setError("Password",{message:"비밀번호를 확인 해주세요..."},{shouldFocus:true})}
     setError("Sever Or Network",{message:"서버 혹은 네트워그 에러 발생"})}
