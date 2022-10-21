@@ -1,5 +1,5 @@
 import { useRef } from "react"
-import { logininformation, server } from "../classAndApi"
+import { userLonginInformation, server } from "../classAndApi"
 import "../css/LoginPage.moudule.scss"
 const LoginPage = () => {
 const idValue = useRef<HTMLInputElement>(null)
@@ -13,9 +13,7 @@ const pwValue= useRef<HTMLInputElement>(null)
     <input type = "password" placeholder="비밀번호를 입력 하세요." ref={pwValue} required/>
     &nbsp;&nbsp;
     <input type="submit" value = "로그인" onClick = {()=>{
-    const userInfo = new logininformation(idValue.current?.value , pwValue.current?.value)
-    console.log(userInfo)
-    server(`/log-in`,userInfo)
-    }}/>
-    </form></div></div></>)}
+    const userInfo = new userLonginInformation(idValue.current?.value , pwValue.current?.value)
+    console.log(userInfo) 
+    server(`/log-in`,userInfo)}}/></form></div></div></>)}
 export default LoginPage
