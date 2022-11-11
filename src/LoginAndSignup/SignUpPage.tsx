@@ -15,7 +15,6 @@ const SignUpPage = () => {
     catch (error) {
        setError("Sever Or Network",{message:"서버 혹은 네트워그 에러 발생"})
        console.log(error)}}
-   
 return(<>
 <div className="sbody"><div>
  <h1 className="stitle">Sign-Up</h1>
