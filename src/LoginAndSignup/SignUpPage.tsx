@@ -6,15 +6,15 @@ const SignUpPage = () => {
  const valied = (value:sinfo) => {
     try {
         if(value.password!==value.cofirmPassword){
-            alert("비밀번호를 확인 해주세요...")
-       setError("password",{},{shouldFocus:true})}
+        alert("비밀번호를 확인 해주세요...")
+        setError("password",{},{shouldFocus:true})}
     else{
         const sign = new userSignUpInformation(value.id,value.password,value.email)
         console.log(sign) 
         server(`/sign-up`,sign)}} 
     catch (error) {
-       setError("Sever Or Network",{message:"서버 혹은 네트워그 에러 발생"})
-       console.log(error)}}
+        setError("Sever Or Network",{message:"서버 혹은 네트워그 에러 발생"})
+        console.log(error)}}
 return(<>
 <div className="sbody"><div>
  <h1 className="stitle">Sign-Up</h1>
