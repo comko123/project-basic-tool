@@ -5,14 +5,9 @@ import MainPage from "./MainPage"
 
 function App() {
   return (
-   <BrowserRouter>
-   <Routes>
-   <Route path="/"element={<MainPage/>}/>
-    <Route path="/log-in"element={<LoginPage/>}/>
-    <Route path="/sign-up"element={<SignUpPage/>}/>
-   </Routes>
-   </BrowserRouter>
-  )
-}
+  <BrowserRouter><Routes><Route path="/"element={<MainPage/>}/>
+  <Route path="/log-in"element={<LoginPage/>}/>
+  <Route path="/sign-up"element={<SignUpPage/>}/>
+  </Routes></BrowserRouter>)}
 
 export default App
